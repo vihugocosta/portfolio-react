@@ -5,7 +5,7 @@ import "./style.css";
 export default function Navigation() {
   return (
     <nav>
-      <p>Bem-vindo!</p>
+      Bem-vindo!
       <div className="nav-buttons">
         <Link className="btn-link" to="/">
           Home
