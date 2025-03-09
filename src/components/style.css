@@ -1,0 +1,99 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --border-color: rgba(2, 0, 0, 0.308);
+    --nav-bg: rgba(255, 255, 255, 0.8);
+    --btn-hover-bg: #000;
+    --btn-hover-color: #fff;
+}
+
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --border-color: rgba(255, 255, 255, 0.2);
+    --nav-bg: rgba(26, 26, 26, 0.8);
+    --btn-hover-bg: #fff;
+    --btn-hover-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease;
+}
+
+nav {
+    border: 1px solid var(--border-color);
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.479);
+    backdrop-filter: blur(10px);
+    margin: 1rem;
+    background-color: var(--nav-bg);
+
+    p {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(15deg);
+}
+
+.btn-link {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: transparent;
+}
+
+.btn-link:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-link:last-child {
+    margin-right: 0;
+}
+
+nav p {
+    margin-right: auto;
+}
