@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Navigation />
       <div className="home-container">
-        <h1>Olá, eu sou o Victor Hugo!</h1>
+        <h1>Olá, me chamo Victor Hugo!</h1>
         <div id="pfp">
             <img id="profile-picture" src="https://avatars.githubusercontent.com/u/196386002?v=4" alt="" />
         </div>
