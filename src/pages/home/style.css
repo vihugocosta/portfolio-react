@@ -16,7 +16,7 @@
     animation: fadeIn 1.2s ease-in;
     font-weight: 700;
     letter-spacing: -0.5px;
-    background: linear-gradient(120deg, var(--text-color), rgba(255, 255, 255, 0.8));
+    background: var(--text-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -122,15 +122,40 @@
     }
 
     .home-container h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .home-container h4 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        margin: 1rem 0;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+        margin: 1rem auto;
+        padding: 0 0.5rem;
     }
 
     #pfp {
         width: 180px;
         height: 180px;
+        margin: 2rem auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-container {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .home-container h1 {
+        font-size: 1.8rem;
+    }
+
+    #pfp {
+        width: 150px;
+        height: 150px;
     }
 }
