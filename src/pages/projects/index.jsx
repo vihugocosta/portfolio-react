@@ -25,6 +25,13 @@ export default function Projects() {
             <a href="https://github.com/vihugocosta/portfolio-dev">Ver no GitHub</a>
             <a href="https://portfolio-dev-victor.netlify.app/">Visitar projeto</a>
           </div>
+            <div className="project-item">
+            <h2>Breakout</h2>
+            <img src="https://raw.githubusercontent.com/vihugocosta/portfolio-react/refs/heads/main/src/assets/break.png" alt="Breakout game" />
+            <p>Jogo cujo objetivo é destruir todos os blocos com a bola sem a deixar cair. Feito usando HTML5.</p>
+            <a href="https://github.com/vihugocosta/breakout-game">Ver no GitHub</a>
+            <a href="https://victor-breakout.netlify.app/">Jogar agora</a>
+          </div>
           <div className="project-item">
             E mais por vir!
             <em>Stay tuned!</em>
